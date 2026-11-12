@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work sans' ;
+}
+
+/* Shared Style */
+
+section{
+    margin-bottom: 150px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    font-weight: bold;
+    font-size: 65px;
+    color: #FFFFFF;
+    margin: 10px 0px;
+    
+}
+h3{
+    font-weight: bold;
+    font-size: 40px;
+    color: #151414;
+    margin: 10px 0px;
+}
+p{
+    color: #FFFFFF;
+    
+}
+.primary-button{
+    color: #005FAC;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    width: 150px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.secondary-button{
+    color: #FFFFFF;
+    background-color: #005FAC;
+    font-weight: 600;
+    font-size: 20px;
+    width: 140px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #005FAC;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.check-icon{
+    width: 24px;
+    height: 24px;
+}
+
+/* Hero Section */
+
+.hero-section{
+width: 100%;
+height: 808px;
+background-image: url("/asset/hero-image.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left;
+}
+.text-contain{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    margin-top: 216px;
+    /* margin-left: 845px; */
+    margin-right: 150px;
+}
+.text-contain div{
+    display: flex;
+    justify-content: end;
+}
+.text-contain h2{
+    margin: 10px;
+}
+
+/* Content Section */
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 87px;
+    text-align: justify;
+}
+.left-content{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: auto;
+    height: 724px;
+    /* margin-left: 206px; */
+}
+.right-content{
+    height: 400px;
+    margin-top: 240px;
+    margin-bottom: 85px;
+    padding: 10px;
+}
+.right-content p{
+    color: #444343;
+}
+.right-content ul li{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.right-content ul li p {
+    color: #444343;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* My Plan section */
+#my-plan h2{
+    color: #151414;
+    text-align: center;
+}
+#my-plan h3{
+    font-weight: 700px;
+    font-size: 30px;
+}
+#my-plan img{
+    height: 93px;
+    width: 93px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 60px 230px;
+
+}
+.item-center{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.item-center h3{
+    margin: 15px;
+}
+.item-center p{
+    margin: 5px;
+}
+
+/* Footer Banner */
+#Footer-Banner{
+    margin: 130px 230px;
+}
+#Footer-Banner h3{
+    color: #FFFFFF;
+}
+.background{
+    position: relative;
+    height: 300px;
+    /* background: #c42684; */
+    background-image: linear-gradient(to right,#005FAC, transparent),url("/asset/hands-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+}
+
+.Footer-Banner-group{
+    position: absolute;
+    /* margin: 60px; */
+    top: 60px;
+    left: 65px;
+}
+
+/* Footer */
+footer{
+    width: auto;
+    height: 577px;
+    background: #151414;
+    padding: 130px 230px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer h2{
+    color: #FFFFFF;
+}
+footer p{
+    color: #FFFFFF;
+}
+.icon-group{
+    display: flex;
+    gap: 10px;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+}
+.Subscribe-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Subscribe-group input{
+    display: flex;
+    height: 64px;
+    width: 325px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #151414;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+
+
+
+/* Media Query */
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    h2{
+        font-size: 35px;
+    }
+    /* Hero section */
+.text-contain{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    margin-top: 216px;
+    /* margin-left: 845px; */
+    margin-right: 70px;
+}
+/* content */
+.main-content{
+    gap: 0px;
+}
+.right-content{
+    /* justify-items: center; */
+    align-items: center;
+    height: 400px;
+    margin-top: 240px;
+    margin-bottom: 85px;
+    padding: 40px;
+}
+/* My Plan */
+.item-center{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#my-plan h3{
+    font-size: 15px;
+
+}
+.item-center p{
+    color: #737272;
+}
+#Footer-Banner{
+    margin: 80px 130px;
+}
+}
+footer{
+    padding: 70px 130px;
+}
+
+/* For Mobile */
+@media screen and (max-width: 768px) {
+    section{
+    margin-bottom: 25px;
+}
+h2{
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin: 0px;
+    
+}
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    color: #151414;
+    margin: 10px;
+}
+p{
+    font-size: 20px;
+    margin: 10px;
+}
+.primary-button{
+    color: #151414;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    width: 150px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.secondary-button{
+    color: #FFFFFF;
+    background-color: #005FAC;
+    font-weight: 300;
+    width: 150px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #005FAC;
+    cursor: pointer;
+}
+/* hero section */
+.hero-section{
+width: 100%;
+height: 450px;
+background-image: url("/asset/hero-image.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left;
+}
+.text-contain{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    margin-top: 98px;
+    margin-right: 25px;
+}
+.hero-section button{
+margin-top: 5px;
+}
+
+
+/* Content */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 17px;
+    text-align: justify;
+}
+.left-content{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 0px;
+    height: auto;
+    width: auto;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+/* My-Plan */
+.grid{
+    display: flex;
+    flex-direction: column;
+    margin: 55px 10px;
+    gap: 20px;
+
+}
+/* footer banner */
+#Footer-Banner{
+    margin: 30px 0px;
+}
+.Footer-Banner-group{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+/* footer */
+footer{
+    width: auto;
+    height: 577px;
+    background: #151414;
+    padding: 30px 15px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+}
