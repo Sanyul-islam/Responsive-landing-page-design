@@ -70,7 +70,7 @@ ul{
 .hero-section{
 width: 100%;
 height: 808px;
-background-image: url("/asset/hero-image.png");
+background-image: url("./asset/hero-image.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
@@ -168,7 +168,7 @@ background-position: left;
     position: relative;
     height: 300px;
     /* background: #c42684; */
-    background-image: linear-gradient(to right,#F15B22, transparent),url("/asset/hands-image.jpg");
+    background-image: linear-gradient(to right,#F15B22, transparent),url("./asset/hands-image.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center;
@@ -226,7 +226,11 @@ footer p{
 
 
 /* Media Query */
+
 @media screen and (min-width: 768px) and (max-width: 1280px) {
+    h2{
+        font-size: 35px;
+    }
     /* Hero section */
 .text-contain{
     display: flex;
@@ -250,9 +254,26 @@ footer p{
     margin-bottom: 85px;
     padding: 40px;
 }
+/* My Plan */
+.item-center{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#my-plan h3{
+    font-size: 15px;
+
+}
+.item-center p{
+    color: #737272;
+}
 #Footer-Banner{
     margin: 80px 130px;
 }
+}
+footer{
+    padding: 70px 130px;
 }
 
 /* For Mobile */
@@ -300,7 +321,7 @@ p{
 .hero-section{
 width: 100%;
 height: 408px;
-background-image: url("/asset/hero-image.jpg");
+background-image: url("./asset/hero-image.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
