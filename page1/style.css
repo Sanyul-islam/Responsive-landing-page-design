@@ -72,7 +72,7 @@ ul{
 .hero-section{
 width: 100%;
 height: 808px;
-background-image: url("/asset/hero-image.png");
+background-image: url("./asset/hero-image.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
@@ -175,7 +175,7 @@ background-position: left;
     position: relative;
     height: 300px;
     /* background: #c42684; */
-    background-image: linear-gradient(to right,#005FAC, transparent),url("/asset/hands-image.jpg");
+    background-image: linear-gradient(to right,#005FAC, transparent),url("./asset/hands-image.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center;
@@ -329,7 +329,7 @@ p{
 .hero-section{
 width: 100%;
 height: 450px;
-background-image: url("/asset/hero-image.png");
+background-image: url("./asset/hero-image.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
